@@ -1,1 +1,279 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Emily Zhang" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="images/graph-meta-tag" />
+    <title>Emily Zhang's Website</title>
+    <link rel="icon" type="image/png" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="./index.js"></script>
+  </head>
+
+  <body>
+    <nav class="navigation">
+      <ul>
+        <li class="nav-item"><a href="#home">Home</a></li>
+        <li class="nav-item"><a href="#projects">Projects</a></li>
+        <li class="nav-item"><a href="#professional">Experience</a></li>
+        <li class="nav-item"><a href="#education">Education</a></li>
+        <li class="nav-item"><a href="#skills">Skills</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- ***********************  PROFILE  *********************** -->
+      <header>
+        <div id="home" class="content-wrap">
+          <h1>Emily Zhang</h1>
+          <h2>Aspiring Software Engineer</h2>
+          <p class="introduction">As an undergraduate student studying computer science and data science at Northwestern University.
+            I am well versed in topics such as object-oriented programming and data structures, and I am pursuing my interests in cyber security.
+            In the professional landscape, I have experience in software development, full stack development and game development.
+            I am currently looking for opportunities to put my knowledge into action, creating softwares with a positive impact on the world.</p>
+          <a id="download-resume-btn" href="resources/EMILY_ZHANG_RESUME.pdf" download>Download Resume</a>
+        </div>
+      </header>
+
+      <!-- ********************  PROJECTS  ********************* -->
+      <section id="projects">
+        <div class="projects-container">
+          <h2>Featured Projects</h2>
+          <p id="projects-intro">View selected projects below. More information can be found on my
+            <a href="https://github.com/emily-fangdi-zhang" target="_blank">Github</a>.</p>
+
+          <section class="projects-item">
+            <div>
+              <img style="margin-bottom: 0px;"
+                src="images/top.png" alt="Photo-App Demonstration Picture">
+              <img style="margin-top: 0px;"
+                src="images/bottom.png" alt="Photo-App Demonstration Picture">
+            </div>
+            <div class="projects-description-right">
+              <h3>Photo-App / React-App</h3>
+              <p>Photo-App, modeled after Instagram, is a full-stack web application that allows users to view and interact with their friend's posts, and see suggested followers.
+                I created the routes that allow a user to comment and like a post, as well as follow other users.
+                I also implemented relational database to store user information with Python Flask and SQLalchemy.
+                At the end, I deployed the app to the Heroku cloud platform in order to allow the user to connect to the server and make API calls.
+                Follow the Photo-App link attached below and use the username "webdev" and password "password" to obtain access.</p>
+                <a href="https://github.com/emily-fangdi-zhang/photo-app" class="projects-button" target="_blank">Github</a>
+                <a href="https://photo-app-hw05-emilyzhang.herokuapp.com/" class="projects-button" target="_blank">Photo-App</a>
+            </div>
+          </section>
+          
+          <section class="projects-item column-reverse">
+            <div class="projects-description-left">
+              <h3>PacMan</h3>
+              <p>PacMan is modeled after PacMan the arcade version with exact dimensions and functons. I utilized Northwestern's GE211 game engine
+                to customize queries allowing ghosts to move with different characteristics and personalities. I designed one continuous level
+                that support audio, 2D graphics and keyboard interaction. All code is written in C++ and follows the model-view-controller design pattern.
+                PacMan features active and inactive ghosts, big and small points, and a PacMan with three lives.
+              </p>
+                <a href="https://github.com/emily-fangdi-zhang/Pac-Man" class="projects-button" target="_blank">Github</a>
+            </div>
+            <div>
+              <img src="images/pacman.png" alt="PacMan Demonstration Picture">
+            </div>
+          </section>
+
+          <section class="projects-item">
+            <div class="projects-description-right">
+                <h3>Trip Planner</h3>
+                <p>
+                    Trip Planner implements a trip planning API that provides routing and searching services. 
+                    To implement this, I utilized graph and dictionary ADTs to establish destinations and their relative connections.
+                    I created an efficint O(nlogn) shortest path algorithm to find the shortest path to any destination.
+                </p>
+                <a href="https://github.com/emily-fangdi-zhang/Trip-Planner" class="projects-button" target="_blank">Github</a>
+            </div>
+          </section>
+
+          <section class="projects-item column-reverse">
+            <div class="projects-description-left">
+                <h3>Spotify Music Suggestion</h3>
+                <p>
+                    Spotify Music Suggestion utilizes the given Spotify API to create a music recommendation system that takes multiple user inputs 
+                    and allows users to send generated HTML files outlining music suggestions to a specified email. All code is written in Python 
+                    and user input is recorded in each step.
+                </p>
+                <a href="https://github.com/emily-fangdi-zhang/Spotify-Music-Suggestion" class="projects-button" target="_blank">Github</a>
+            </div>
+            <div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- ***********************  PROFESSIONAL EXPERIENCE  *********************** -->
+      <section id="professional">
+        <div class="content-wrap">
+          <h2>Experience</h2>
+          <p id="professional-intro">A full list of my professional experiences can be found on my
+            <a href="https://www.linkedin.com/in/emily-fangdi-zhang" target="_blank">LinkedIn</a>.</p>
+
+            <section class="job-item">
+              <div class="job-detals">
+                <h3>Master Data Intern</h3>
+                <p>Oil-Dri Corporation of America - Chicago, IL</p>
+                <p>Aug 2022 - Sep 2022</p>
+              </div>
+              <div class="job-summary">
+                <ul>
+                  <li>Supported the maintenance of data management stored in the JDE ERP and facilitated general vendor setup activities in the Product Data Management portal as part of Oil-Dri’s data transition from the AS400 system</li>
+                  <li>Ensured validation of vendor data, assisting the Sr. Director of Demand & Data Management</li>
+                  <li>Provided support for supply chain projects by extracting, adding and changing requested data </li>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="job-item">
+            <div class="job-detals">
+              <h3>Horgan Group Intern</h3>
+              <p>Raymond James Financial - Newport Beach, CA</p>
+              <p>Apr 2022 - Jul 2022</p>
+            </div>
+            <div class="job-summary">
+              <ul>
+                <li>Used the RJF secure based lending software to conduct potential loan analysis and risk assessment for individuals and companies with the firm to help clients with SRL application</li>
+                <li>Established and maintained client relationships through opening new accounts with RJF client onboarding and maintenance software, Maximizer CRM, client center and service center</li>
+                <li>Conducted research on market performance through RJNet and MarketEdge software </li>
+                <li>Developed portfolio performance, analysis, and client reporting reports with RJF wealth management center</li>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="job-item">
+            <div class="job-detals">
+              <h3>Student Researcher</h3>
+              <p>University of California San Diego - La Jolla, CA</p>
+              <p>Oct 2020 - Jun 2021</p>
+            </div>
+            <div class="job-summary">
+              <ul>
+                <li>Researched topics including the economic rationales and consequences of the Sino-US trade war and the political-economy of a changing international order in the presence of Sino-US conflicts</li>
+                <li>Developed comprehensive knowledge of STATA in performing data analysis, data visualization and linear regression on WTO dispute data</li>
+                <li>Worked intensively to present said research at the annual Undergraduate Research Conference</li>
+              </ul>
+            </div>
+          </section>
+
+      </section>
+
+
+      <!-- ******************  EDUCATION ****************** -->
+      <section id="education">
+        <div class="education-container">
+          <h2>Education</h2>
+
+          <section class="education-item" id="cornell">
+            <div>
+              <img id="northwestern-logo" src="https://upload.wikimedia.org/wikipedia/commons/5/56/Northwestern_University_seal.svg"
+                alt="Northwestern Logo">
+            </div>
+            <div>
+              <h3>Northwestern University - Evanston, IL</h3>
+              <p>Bachelor's Degree, Computer Science and Data Science</p>
+              <p>Sep 2021 - Jun 2024</p>
+              <p>GPA: 3.78/4.00</p>
+              <p>Awards & Honors: Dean's List</p>
+            </div>
+          </section>
+
+          <section class="education-item" id="cornell">
+            <div>
+              <img id="ucsd-logo" src="https://brand.ucsd.edu/_images/logos-and-brand-elements/additional-campus-logos/ucsd-seal.svg"
+                alt="UCSD Logo">
+            </div>
+            <div>
+              <h3>University of California San Diego - La Jolla, CA</h3>
+              <p>Bachelor's Degree, Computer Science</p>
+              <p>Sep 2020 - May 2021</p>
+              <p>GPA: 3.70/4.00</p>
+              <p>Awards & Honors: Provost’s Honors</p>
+            </div>
+          </section>
+
+          <section class="education-item">
+            <div>
+              <img id="smes-logo" src="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/892/logo/footer-crest-big.png"
+                alt="Saint Margaret's Episcopal School Logo">
+            </div>
+            <div>
+              <h3>Saint Margaret's Episcopal School of Scotland - San Juan Capistrano, CA</h3>
+              <p>High School Diploma</p>
+              <p>Aug 2016 - May 2020</p>
+              <p>GPA: 4.45/5.00 Weighted, 3.95/4.00 Unweighted</p>
+              <p>Awards & Honors: Cum Laude Society Inductee, UCLA MUN Outstanding Delegate</p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- ******************  SKILLS ****************** -->
+      <section id="skills">
+        <div class="skills-wrap">
+          <h2>Skills</h2>
+          <h3>Coding Languages</h3>
+          <ul class="skills-list">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+            <li>STATA</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SQL</li>
+            <li>JSON</li>
+            <li>Racket</li>
+            <li>MATLAB</li>
+            <li>LaTeXiT</li>
+          </ul>
+          <h3>Frameworks</h3>
+          <ul class="skills-list">
+            <li>Flask</li>
+            <li>React</li>
+            <li>Maximizer CRM</li>
+            <li>JD Edwards ERP</li>
+          </ul>
+          <h3>Technologies</h3>
+          <ul class="skills-list">
+            <li>Docker</li>
+            <li>Postman</li>
+            <li>Heroku</li>
+            <li>Git</li>
+            <li>Github</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- *****************  CONTACT INFO  ***************** -->
+      <section id="contact">
+        <div class="content-wrap">
+          <h2>Get in touch</h2>
+          <form id="contact-form" action="https://formspree.io/f/mjvzazrn" method="POST">
+            <input type="text" name="name" placeholder="Full name" required>
+            <input type="email" name="mail" placeholder="Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" rows="6" placeholder="Message" required></textarea>
+            <button type="submit" name="submit">SEND</button>
+          </form>
+          <div id="contact-form-status" class=""></div>
+        </div>
+      </section>
+
+      <footer>
+        <small>Copyright &copy; 2022. Designed by Emily Zhang. All Rights Reserved.</small>
+      </footer>
+    </main>
+  </body>
+
+</html>
