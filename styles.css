@@ -123,9 +123,7 @@ html {
   }
   .projects-item img {
     width: 300px;
-    height:fit-content;
     margin-top: 55px;
-    margin-bottom: 55px;
   }
   .projects-item h3 {
     margin-top: 0;
